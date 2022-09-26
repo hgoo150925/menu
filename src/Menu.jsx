@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const Menu = ({ menu }) => {
   return (
     <div className="section-center">
@@ -17,4 +19,8 @@ export const Menu = ({ menu }) => {
       })}
     </div>
   );
+};
+
+Menu.propTypes = {
+  menu: PropTypes.array.isRequired,
 };

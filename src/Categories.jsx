@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const Categories = ({ categories, filterMenu }) => {
   return (
     <div className="btn-container">
@@ -15,4 +17,9 @@ export const Categories = ({ categories, filterMenu }) => {
       })}
     </div>
   );
+};
+
+Categories.propTypes = {
+  categories: PropTypes.array.isRequired,
+  filterMenu: PropTypes.func.isRequired,
 };
